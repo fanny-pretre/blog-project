@@ -1,5 +1,23 @@
-function Blog() {
-  return <h1> Hello from blog </h1>;
-}
+import PostCard from "@/components/postCard/postCard";
+import styles from "./blog.module.css";
 
-export default Blog;
+const BlogPage = async () => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.post}>
+        <PostCard />
+      </div>
+      <div className={styles.post}>
+        <PostCard />
+      </div>
+      <div className={styles.post}>
+        <PostCard />
+      </div>
+      <div className={styles.post}>
+        <PostCard />
+      </div>
+    </div>
+  );
+};
+
+export default BlogPage;
